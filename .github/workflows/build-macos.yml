@@ -25,7 +25,7 @@ jobs:
         run: |
           pyinstaller --onefile \
                       --name pg_sql_siag \
-                      --add-data "query1.sql:." \ 
+                      --add-data "my_query1.sql:." \ 
                       pg_sql_diag97.py
 
       - name: Upload artifact
